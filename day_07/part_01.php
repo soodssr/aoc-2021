@@ -43,7 +43,7 @@ Input: input_01.txt
 $possible_fuel_consumption = [];
 $best_horizontal_position = 0;
 
-for ($desired_position = 1; $desired_position <= $max; $desired_position++) {
+for ($desired_position = $min; $desired_position <= $max; $desired_position++) {
     $fuel_used = 0;
     foreach ($crabs_current_positions as $position) {
         $fuel_used += abs($position - $desired_position);

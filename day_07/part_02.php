@@ -31,12 +31,12 @@ Input: input_01.txt
 $possible_fuel_consumption = [];
 $best_horizontal_position = 0;
 
-for ($desired_position = 1; $desired_position <= $max; $desired_position++) {
+for ($desired_position = $min; $desired_position <= $max; $desired_position++) {
     $fuel_used = 0;
     foreach ($crabs_current_positions as $position) {
         $position_diff = abs($position - $desired_position);
         if ($position_diff > 1) {
-            $fuel_used += array_sum(range(1, $position_diff));
+            $fuel_used += (($position_diff + 1) * $position_diff) / 2;
         } else {
             $fuel_used += $position_diff;
         }

@@ -6,6 +6,7 @@ $input_array = explode("\n", $input);
 unset($input);
 
 $crabs_current_positions = explode(',', $input_array[0]);
+$min = max($crabs_current_positions);
 $max = max($crabs_current_positions);
 
 echo "\n\t>>> Executing Part 01 of puzzle <<<\n";
