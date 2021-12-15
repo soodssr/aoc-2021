@@ -6,7 +6,7 @@
  */
 
 $baseDir = __DIR__;
-$last = 9;
+$last = 10;
 
 echo "Hello There! Welcome to \"Advent Of Code 2021\".\n";
 echo "Puzzles for Day 1 to $last are completed.\n";
@@ -22,7 +22,7 @@ if (!is_int($day) || !in_array($day, range(1, $last))) {
 
 echo "\n\tYou have selected Day: $day...\n";
 
-$input_file_base_path = $baseDir . '/day_0' . $day . '/';
+$input_file_base_path = $baseDir . '/day_' . sprintf("%02d", $day) . '/';
 
 require $input_file_base_path . '/index.php';
 
