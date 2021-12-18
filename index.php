@@ -6,7 +6,7 @@
  */
 
 $baseDir = __DIR__;
-$last = 10;
+$last = 11;
 
 echo "Hello There! Welcome to \"Advent Of Code 2021\".\n";
 echo "Puzzles for Day 1 to $last are completed.\n";
